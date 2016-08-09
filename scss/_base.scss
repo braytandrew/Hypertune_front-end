@@ -1,0 +1,68 @@
+
+html, body{
+  height:100%;
+}
+
+body{
+  background: $white;
+ 	font-family:$fontfamily;
+ 	color: $black;
+	font-size:17px;
+	line-height:1.3;
+	margin:0;
+	padding:0;
+}
+
+h1{
+  font-size: 2.6rem;
+  padding: 0;
+  margin:0 0 20px 0;
+}
+
+h2{
+	font-size: 2.6rem;
+  padding: 0;
+  margin:0 0 20px 0;
+}
+
+h3{
+  font-size: 1.8rem;
+	padding: 0;
+  margin:0 0 10px 0;
+}
+
+h4{
+  padding: 0;
+  margin:0 0 10px 0;
+}
+
+h5{
+  font-size: 13px;
+  padding: 0;
+  margin:0 0 10px 0;
+
+}
+
+p {
+	padding: 0;
+  margin:0;
+
+}
+
+p.small-text{
+  font-size:13px;
+  margin-top: 20px;
+}
+
+a{
+	text-decoration:none;
+  color:$black;
+	padding: 0;
+  margin:0;
+}
+
+a:hover{
+	text-decoration: none;
+  cursor: pointer;
+}
+

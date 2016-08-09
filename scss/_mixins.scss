@@ -1,0 +1,22 @@
+
+// Transition
+@mixin transition($value) {
+	-webkit-transition: $value;
+	-moz-transition: $value;
+	transition: $value;
+}
+
+// Clearfix
+@mixin clearfix {
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+
+
+

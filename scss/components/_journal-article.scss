@@ -1,0 +1,42 @@
+
+.journal-article{
+	padding-bottom:15px;
+	margin-bottom:30px;
+	color:$black;
+	border-bottom:1px solid $grey;
+
+	@include susy-breakpoint($bp-medium, $susy) {
+		border-bottom:none;
+	}
+
+	& img{
+		width:100%;
+		height:auto;
+		margin-top:-10px;
+		position: relative;
+		z-index: 50;
+	}
+
+	& h4{
+		margin:0;
+		padding:0;
+		position: relative;
+		z-index: 51;
+	}
+
+	& p{
+		font-size:14px;
+		margin-bottom:8px;
+	}
+
+	& a{
+		color:$black;
+		text-decoration: none;
+	}
+}
+
+.highlight{
+	background: $blue;
+	color:$white;
+	padding:7px 5px;
+}

@@ -1,0 +1,131 @@
+.hero-wrapper{
+	position: relative;
+	width: 100%;
+	height:75%;
+}
+
+.shop-online, .our-workshop{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float:left;
+    height:250px;
+    color: $white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+
+    @include susy-breakpoint($bp-medium, $susy) {
+        height:100%;
+    }
+}
+
+.shop-online{
+	background-image: url("../images/hero-left.jpg");
+}
+
+.our-workshop{
+    background-image: url("../images/hero-right.jpg");
+}
+
+.shop-online:hover:after,.our-workshop:hover:after {
+
+    @include susy-breakpoint($bp-medium, $susy) {
+        overflow: hidden;
+        text-indent: -9999rem;
+        font-size: 0;
+        line-height: 0;
+        background: -owg-linear-gradient(45deg, rgba(48,12,220,0.35) 0%, rgba(48,12,220,0) 50%, rgba(48,12,220,0) 100%),-owg-linear-gradient(135deg, rgba(244,12,67,0) 0%, rgba(244,12,67,0) 50%, rgba(244,12,67,0.2) 100%),linear-gradient(transparent 50%, rgba(0,0,0,0.4) 100%);
+        background: -webkit-linear-gradient(45deg, rgba(48,12,220,0.35) 0%, rgba(48,12,220,0) 50%, rgba(48,12,220,0) 100%),-webkit-linear-gradient(135deg, rgba(244,12,67,0) 0%, rgba(244,12,67,0) 50%, rgba(244,12,67,0.2) 100%),linear-gradient(transparent 50%, rgba(0,0,0,0.4) 100%);
+        background: -moz-linear-gradient(45deg, rgba(48,12,220,0.35) 0%, rgba(48,12,220,0) 50%, rgba(48,12,220,0) 100%),-moz-linear-gradient(135deg, rgba(244,12,67,0) 0%, rgba(244,12,67,0) 50%, rgba(244,12,67,0.2) 100%),linear-gradient(transparent 50%, rgba(0,0,0,0.4) 100%);
+        background: -o-linear-gradient(45deg, rgba(48,12,220,0.35) 0%, rgba(48,12,220,0) 50%, rgba(48,12,220,0) 100%),-o-linear-gradient(135deg, rgba(244,12,67,0) 0%, rgba(244,12,67,0) 50%, rgba(244,12,67,0.2) 100%),linear-gradient(transparent 50%, rgba(0,0,0,0.4) 100%);
+        background: linear-gradient(45deg, rgba(48,12,220,0.35) 0%, rgba(48,12,220,0) 50%, rgba(48,12,220,0) 100%), linear-gradient(135deg, rgba(244,12,67,0) 0%, rgba(244,12,67,0) 50%, rgba(244,12,67,0.2) 100%),linear-gradient(transparent 50%, rgba(0,0,0,0.4) 100%);
+        content: "gradient standard photo filter bottom left to top right";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        @include transition(0.35s);
+    }
+ }
+
+.shop-online:hover .hero-text h1, .our-workshop:hover .hero-text h2{
+
+    @include susy-breakpoint($bp-medium, $susy) {
+     	border-bottom: 1px solid $white;
+     	@include transition(0.35s);
+    }
+ }
+
+.hero-text{
+	text-align: center;
+	position: relative;
+	z-index: 100;
+
+    & a{
+        color:$white;
+    }
+}
+
+.hero-text{
+
+	& h1 ,h2{
+    	color:$white;
+        padding:10px 20px;
+    	
+
+        @include susy-breakpoint($bp-medium, $susy) {
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+        }
+    }
+}
+
+.h1-arrow{
+	position: relative;
+	top:8px;
+	left:5px;
+    height:40px;
+}
+
+.hr-divide {
+    display: block;
+    position: relative;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+
+.hr-divide span {
+    white-space: nowrap;
+}
+
+.hr-divide span {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    background: $white;
+    padding: 0 20px;
+}
+
+.hr-divide:after {
+    content: '';
+    border-top: 1px solid $grey;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+}
+
+
+.home-journal-articles{
+    margin-top:30px;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,169 @@
+
+footer{
+	width:100%;
+	background: $black;
+	color:$white;
+	padding:10px 0;
+	@include clearfix;
+
+	@include susy-breakpoint($bp-medium, $susy) {
+ 		background: $white;
+		color:$black;
+	}
+}
+
+.footer-top{
+	color:$white;
+
+	@include susy-breakpoint($bp-medium, $susy) {
+		border-top:1px solid $black;
+		border-bottom:1px solid $black;
+		height:60px;
+		line-height:60px;
+	}
+}
+
+.footer-top ul{
+
+	@include susy-breakpoint($bp-medium, $susy) {
+		float: none;
+	    margin: 0 auto;
+	    // padding:20px 0;
+	    display: table;
+	    table-layout: fixed;
+	    text-align: center;
+	}	
+}
+
+.footer-top ul li{
+	padding: 15px 0;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	width:100%;
+
+  		@include susy-breakpoint($bp-medium, $susy) {
+			display: inline;
+		}
+	}
+
+.footer-top ul li a{
+  	color:$white;
+
+	@include susy-breakpoint($bp-medium, $susy) {
+		color:$black;
+		padding: 20px 80px 19px;
+	    position: relative;
+	    display: inline;
+	    border-left: 1px solid $black;
+
+	    &:hover{
+	    	color:$white;
+	    	@include transition(0.3s);
+	    	background:lighten($black, 10%);
+    	}
+	}
+}
+
+.last{
+
+	@include susy-breakpoint($bp-medium, $susy) {
+	    border-right: 1px solid $black;
+	}
+}
+
+.footer-bottom{
+	margin-top:40px;
+	line-height:1.5;
+
+	& a{
+		color:$white;
+	}
+
+	& ul{
+		margin-top:40px;
+	}
+
+	& ul li{
+		padding: 15px 0;
+  		border-bottom: 1px solid rgba(255,255,255,0.2);
+
+  		&:first-of-type{
+  			border-top: 1px solid rgba(255,255,255,0.2);
+  		}
+
+  		&:last-of-type{
+  			border-bottom: none;
+  		}
+	}
+}
+
+// .footer-top{
+// 	border-top:1px solid $black;
+// 	border-bottom:1px solid $black;
+
+// 	& ul li{
+// 		display: block;
+// 	}
+// }
+
+// .footer-bottom{
+// 	text-align: center;
+
+// 	& ul li{
+// 		display: inline;
+// 	}
+// }
+
+// .small-links{
+// 	margin:40px 0 20px;
+// }
+
+// .small-links ul li{
+// 	font-size: 16px;
+// 	padding:0 10px;
+// }
+
+// .footer-nav{
+// 	float: none;
+//     margin: 0 auto;
+//     padding:20px 0;
+//     display: table;
+//     table-layout: fixed;
+//     text-align: center;
+// }
+
+// .footer-nav li a{
+// 	padding: 21px 80px;
+//     position: relative;
+//     display: inline;
+//     border-left: 1px solid #313131;
+
+//     &:hover{
+//     	color:$white;
+//     	@include transition(0.3s);
+//     	background:lighten($black, 10%);
+//     }
+// }
+
+// .last-footer{
+// 	 border-right: 1px solid #313131;
+// }
+
+// .copyright{
+// 	margin:10px 0 0;
+// }
+
+// .contact{
+// 	margin-top: 50px;
+// 	text-align: center;
+
+// 	& a{
+// 		color:$black;
+
+// 	}
+
+// 	& p{
+// 		margin-bottom:6px;
+// 	}
+// }
+
+

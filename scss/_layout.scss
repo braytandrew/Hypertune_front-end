@@ -1,0 +1,82 @@
+
+.brand{
+	@include span(10 of 12 first);
+}
+
+.navigation-icon{
+	@include span(2 of 12 last);
+}
+
+.shop-online{
+	@include span(12);
+
+	@include susy-breakpoint($bp-medium, $susy) {
+ 		@include span(first 6 of 12);
+	}
+}
+
+.our-workshop{
+	@include span(12);
+
+	@include susy-breakpoint($bp-medium, $susy) {
+ 		@include span(last 6 of 12);
+	}
+}
+
+.home-journal-articles{
+	@include span(12);
+}
+
+.journal-article{
+	@include span(12);	
+
+	@include susy-breakpoint($bp-medium, $susy) {
+ 		@include span(4 of 12);
+	}
+}
+
+.read-more{
+	@include span(12);
+}
+
+// .footer-top ul{
+// 	@include span(12);
+
+// 	@include susy-breakpoint($bp-medium, $susy) {
+//  		@include span(isolate 6 at 4);
+// 	}
+// }
+
+.footer-bottom{
+	@include span(12);
+}
+
+
+
+
+
+// .centered-content{
+// 	@include span(8);
+// 	padding-top:2rem;
+// 	padding-bottom:6rem;
+
+// 	@include susy-breakpoint($bp-medium, $susy) {
+// 		@include span(isolate 6 at 2);
+// 	}
+
+// 	@include susy-breakpoint($bp-large, $susy) {
+// 		@include span(isolate 4 at 3);
+// 		padding-bottom:8rem;
+// 	}
+// }
+
+
+
+
+
+
+
+
+
+
+
