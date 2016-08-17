@@ -45,12 +45,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-@font-face {
-  font-family: 'Calibre-Bold';
-  src: url("../fonts/CalibreWeb-Bold.eot"), url("../fonts/CalibreWeb-Bold.woff"), url("../fonts/CalibreWeb-Bold.woff2"); }
-@font-face {
-  font-family: 'Calibre-Regular';
-  src: url("../fonts/CalibreWeb-Regular.eot"), url("../fonts/CalibreWeb-Regular.woff"), url("../fonts/CalibreWeb-Regular.woff2"); }
 html, body {
   height: 100%; }
 
