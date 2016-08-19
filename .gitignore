@@ -1,5 +1,6 @@
 # Exclude codekit config
-.codekit
+config.codekit
+/min
 
 # Exclude OS X folder attributes
 .DS_Store
